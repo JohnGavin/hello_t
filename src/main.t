@@ -15,4 +15,4 @@
 --#   -- Returns: "Hello, world!"
 --#
 --# @export
-greet = \(name: String -> String) sprintf("Hello, %s!", name)
+greet = \(name: String -> String) str_join(["Hello, ", name, "!"], "")
